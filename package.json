@@ -1,0 +1,33 @@
+{
+  "name": "gpt",
+  "version": "1.1.1",
+  "description": "",
+  "main": "main.js",
+  "build": {
+    "appId": "com.example.my-electron-app",
+    "productName": "太阳以西",
+    "directories": {
+      "output": "build"
+    },
+    "mac": {
+      "icon": "/icon.png"
+    },
+    "win": {
+      "icon": "/icon.png"
+    },
+    "linux": {
+      "icon": "/icon.png"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-builder": "^24.4.0",
+    "electron": "^25.2.0"
+  }
+}
