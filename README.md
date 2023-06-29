@@ -1,10 +1,13 @@
 # chatgptWeb-build
 
 
-git pull 拉代码
+git pull https://github.com/qsc19971022/chatgptWeb-build
 
-cd 进入目录
+cd chatgptWeb-build
 
 npm install 
+
+把main.js中的链接改成你的  
+package.json中的productName也改成你想要的
 
 npm run dist
