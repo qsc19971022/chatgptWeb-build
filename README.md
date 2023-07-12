@@ -1,7 +1,7 @@
 # chatgptWeb-build
 
 
-git pull https://github.com/qsc19971022/chatgptWeb-build
+git clone https://github.com/qsc19971022/chatgptWeb-build
 
 cd chatgptWeb-build
 
