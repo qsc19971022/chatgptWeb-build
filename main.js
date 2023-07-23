@@ -1,4 +1,4 @@
-const { app, BrowserWindow, screen } = require('electron')
+const { app, BrowserWindow, screen, Menu } = require('electron')
 
 function createWindow() {
   const { width, height } = screen.getPrimaryDisplay().workAreaSize
@@ -10,10 +10,47 @@ function createWindow() {
       nodeIntegration: true,
       contextIsolation: false,
     },
+    autoHideMenuBar: true // 隐藏菜单栏
   })
 
   win.loadURL('https://ai.woftsun.cn')
 }
+
+const template = [
+  {
+    label: '菜单',
+    submenu: [
+      {
+           label: '菜单1',
+        click: () => {
+          console.log('加想要的逻辑')
+          // 在这里添加你的代码
+        }
+      },
+      {
+        label: '菜单2',
+        click: () => {
+          console.log('加想要的逻辑')
+          // 在这里添加你的代码
+        }
+      }
+    ]
+  },
+  {
+    label: '关于',
+    submenu: [
+      {
+        label: 'Undo',
+        role: 'undo'
+      },
+      {
+        label: 'Redo',
+        role: 'redo'
+      }
+    ]
+  }
+]
+
 
 app.whenReady().then(createWindow)
 
